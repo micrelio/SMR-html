@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ejemplo</title>
+    <style>
+        [class]{
+            color:red;
+            position:absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="pepe">Ejemplos cabecera</h1>
+        <h1 class="pipo">Ejemplos cabecera</h1>
+        <h1 class="pepa">Ejemplos cabecera</h1>
+        <p class="po">lelo </p>
+        <p class="pi">lalo</p>
+        <p class="pu">lilo</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Ejemplos HTML</li>
+            <ul>
+                <li><a href="a.html">Página a</a></li>
+                <li><a href="b.html">Página b</a></li>
+            </ul>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div id="capa" style="padding: 10px; background-color: #ff8800">Haz clic en un botón</div>
+
+        <input type="button" value="Botón A" onclick="$('#capa').html('Has hecho clic en el botón<b>A</b>')">
+        <input type="button" value="Botón B" onclick="$('#capa').html('Recibido un clic en el botón<b>B</b>')">
+    </section>
+    <footer>Pie de página</footer>
+
+    <hr>
+
+
+
+</body>
+
+</html>
