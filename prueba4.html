@@ -5,11 +5,21 @@
     <meta charset="utf-8">
     <title>Ejemplo</title>
     <style>
-        [class]{
-            color:red;
-            position:absolute;
+        [class] {
+            color: red;
+            border-radius: 5px 10px;
         }
+            .cajap {
+                border-radius: 50px 10px; 
+                background-color: #002fff; 
+                box-shadow: 10px 10px 5px 5px rgb(0, 0, 0);
+            }
+            h1{
+                text-shadow: 2px 2px 5px rgba(255,126,0,1);   
+            }        
     </style>
+   
+    
 </head>
 
 <body>
@@ -17,9 +27,11 @@
         <h1 class="pepe">Ejemplos cabecera</h1>
         <h1 class="pipo">Ejemplos cabecera</h1>
         <h1 class="pepa">Ejemplos cabecera</h1>
-        <p class="po">lelo </p>
-        <p class="pi">lalo</p>
-        <p class="pu">lilo</p>
+        <div class="cajap">
+            <p class="po">lelo </p>
+            <p class="pi">lalo</p>
+            <p class="pu">lilo</p>
+        </div>
     </header>
     <nav>
         <ul>
@@ -35,8 +47,14 @@
     <section>
         <div id="capa" style="padding: 10px; background-color: #ff8800">Haz clic en un botón</div>
 
-        <input type="button" value="Botón A" onclick="$('#capa').html('Has hecho clic en el botón<b>A</b>')">
-        <input type="button" value="Botón B" onclick="$('#capa').html('Recibido un clic en el botón<b>B</b>')">
+     <div>
+        <picture>
+            <source srcset="imagen/1.jpg" media="(min-width: 700px)">
+            <source srcset="imagen/2.jpg" media="(min-width: 400px)">
+            <source srcset="imagen/3.jpg">
+            <img src="imagen/4.jpg" alt="imagen">
+        </picture>
+     </div>
     </section>
     <footer>Pie de página</footer>
 
