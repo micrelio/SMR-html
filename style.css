@@ -1,13 +1,29 @@
 [class] {
-    color: red;
-    border-radius: 5px 10px;
+  /* color: red; */
+  border-radius: 5px 10px;
 }
 
-    .cajap {
-        border-radius: 50px 10px; 
-        background-color: #002fff; 
-        box-shadow: 10px 10px 5px 5px rgb(0, 0, 0);
-    }
-    h1{
-        text-shadow: 2px 2px 5px rgba(255,126,0,1);   
-    }      
+.cajap {
+  border-radius: 50px 10px;
+  background-color: #002fff;
+  box-shadow: 10px 10px 5px 5px rgb(0, 0, 0);
+}
+h1 {
+  text-shadow: 2px 2px 5px rgba(255, 126, 0, 1);
+}
+nav {
+  background-color: #fa646b;
+  padding: 10px;
+}
+
+nav a {
+    text-decoration:none;
+    margin-left: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+nav .item-active {
+    color: blue;
+ }
