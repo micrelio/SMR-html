@@ -17,14 +17,33 @@ nav {
 }
 
 nav a {
-    
-    text-decoration:none;
-    margin-left: 10px;
-    font-weight: bolder;
-    font-size: 20px;
-    color: black;
+  text-decoration: none;
+  margin-left: 10px;
+  font-weight: bolder;
+  font-size: 20px;
+  color: black;
 }
 
 nav .item-active {
-    color: blue;
- }
+  color: blue;
+}
+
+/*-------------------flex-----------------------------*/
+.segunda {
+  background-color: #fa646b;
+}
+.imagenes {
+  min-height: 550px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+}
+
+.imagenes img {
+  width: 200px;
+  height: 250px;
+  margin: 20px;
+}
