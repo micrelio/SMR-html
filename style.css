@@ -74,7 +74,9 @@ img {
   
     /* Equivalente a */
     grid-column: x0 / x3;
-  }
+display: flex;
+justify-content: center;
+align-items: center;  }
   
   .sidebar {
     background: black;
@@ -99,5 +101,7 @@ img {
     row-gap: 10px;
     background-color: blue;
     /* grid-gap: 20p x; */
-  }
+    /* justify-items: center;
+    align-items: center; */
+    }
   
