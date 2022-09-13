@@ -11,12 +11,12 @@
 h1 {
   text-shadow: 2px 2px 5px rgba(255, 126, 0, 1);
 }
-nav {
+#nav {
   background-color: #fa646b;
   padding: 10px;
 }
 
-nav a {
+#nav a {
   text-decoration: none;
   margin-left: 10px;
   font-weight: bolder;
@@ -24,7 +24,7 @@ nav a {
   color: black;
 }
 
-nav .item-active {
+#nav .item-active {
   color: blue;
 }
 

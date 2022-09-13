@@ -15,36 +15,68 @@
     <style>
 
     </style>
-<script>
-	alert("Mensaje desde JavaScript");
-    document.write("mensaje pagina");
+    <script src="jquery.js" type="text/javascript"></script>
 
-document.write("<p>esto es un parrafo</p>")
-// document.getElementByClass("body").innerHTML= "mensaje";
 
-var respuesta;
-      respuesta = confirm("¿Seguro que quiere cancelar?");
-      alert("Ha pulsado: "+ respuesta);
 
-</script> 
+    <script>
+        // alert("Mensaje desde JavaScript");
+
+        // document.write("mensaje pagina");
+
+        console.log("mensaje en consola");
+
+        document.write("<p>esto es un parrafo</p>")
+
+
+        // var respuesta;
+        // respuesta = confirm("¿Seguro que quiere cancelar?");
+        // alert("Ha pulsado: " + respuesta);
+
+
+        // var provincia;
+        // provincia = prompt("Introduzca la provincia");
+        // alert("Ha introducido: " + provincia);
+
+        document.write("<p>Esto es un parrafo</p>")
+
+
+        //jquery
+        $(document).ready(function(){ 
+	var n = $(".noticias").length;
+
+	if (n < 2) {
+		$("body").css("background", "green");
+	} 
+	else {
+		$("body").css("background", "orange");
+	}
+});
+
+
+
+
+
+    </script>
 
 
 
 </head>
 
-<body class="body">
-    <nav>
+<body id="body">
+   
+    <nav id="nav" >
         <a href="index.html">Inicio</a>
         <a href="menuUl.html">Ul</a>
         <a href="extructuraWeb.html">Extructura</a>
         <a href="nav&Css.html">Nav y Css</a>
-        <a href="flex.html" >Flex</a>
+        <a href="flex.html">Flex</a>
         <a href="grid.html">Grid</a>
         <a href="javascript.html" class="item-active">JavaScript</a>
 
     </nav>
     <header>
-      
+
     </header>
 
     <section>
@@ -58,6 +90,36 @@ var respuesta;
 
 
 
+    1
+    2
+    <p id="parrafo" style="color:#FF0040;">Esto es un párrafo de texto de color rojo.</p>
+    <p><input type="button" id="boton" value="Clicka para cambiar la propiedad"></p>
+
+    <p>
+        Los enlaces son súper importantes en las páginas web ya que sin ellos internet no tendría la potencia que 
+    tiene. Veamos algún ejemplo de enlace:
+        <a href="http://google.com">Visita Google</a>
+        <a href="/index.html">Ir a la página principal del sitio</a>
+        <a href="mailto:nombre@dominio.com">correo</a>
+
+    </p>
 </body>
 
 </html>
+<script>
+
+
+$(document).ready(function(){
+    $("#boton").on("click",function(){
+	    $("#parrafo").css("color", "#000000");
+        $("#nav").css("background-color", "#002fff");
+    });
+});
+
+    // $("#nav").css("background-color", "#002fff");
+
+    // document.getElementById("body").innerHTML= "mensaje body";
+
+
+
+</script>
